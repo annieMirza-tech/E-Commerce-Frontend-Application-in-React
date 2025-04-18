@@ -1,0 +1,73 @@
+/* src/components/navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: -30px
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-center {
+  flex: 1;
+  text-align: center;
+}
+
+.icon {
+  font-size: 12px; /* Font size for icons */
+  margin-right: 4px; /* Space between icon and text */
+}
+.email-icon {
+    font-size: 9px; /* Specific font size for email icon, can adjust if different from .icon */
+    margin-left: -10px2
+  }
+.text {
+  font-size: 12px; /* Font size for text */
+  margin-right: 10px; /* Space between text and vertical line */
+  display: flex;
+  align-items: center;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-line {
+  border-left: 1px solid #333; /* Color and thickness of the vertical line */
+  height: 20px; /* Height of the vertical line */
+  margin: 0 5px; /* Space around the vertical line */
+}
+
+.email {
+  font-size: 12px; /* Font size for email text */
+  margin-left: 4px; /* Space between email icon and address */
+}
+
+.shipping-info {
+  font-size: 12px; /* Font size for shipping info */
+}
+
+.shop-now {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.dropdown {
+  margin-left: 20px;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px; /* Font size for dropdowns */
+}

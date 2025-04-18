@@ -1,0 +1,70 @@
+.category-card-view {
+    margin-top: 640px;
+    width: 92vw; /* Adjust width to be responsive */
+    padding: 20px;
+    background-color: #ffffff;
+    margin-left: 30px;
+    position: relative; /* Ensure positioning context for arrows */
+  }
+  
+  .card {
+    border-radius: 10px;
+    height: 300px; /* Fixed height for the card */
+    padding: 10px; /* Padding inside the card */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    margin: 0 35px; /* Horizontal spacing between cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure positioning context for title */
+  }
+  
+  .card img {
+    width: 100%; /* Ensure image fits the card's width */
+    height: 290px; /* Fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px; /* Optional: to round the corners of images */
+    display: block;
+  }
+  
+  .card-title {
+    position: absolute; /* Position title absolutely within the card */
+    bottom: 10px; /* Adjust based on your preference */
+    left: 0;
+    width: 60%;
+    align-items: center;
+    margin-left: 50px;
+    background-color: white; /* Semi-transparent white background for the title box */
+    color: #333; /* Text color */
+    font-size: 16px; /* Font size for the title */
+    padding: 10px; /* Padding inside the title box */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width */
+    z-index: 1000; /* Ensure the title box is above the image */
+    text-align: center; /* Center the text horizontally */
+    border-radius: 0 0 8px 8px; /* Optional: to round the bottom corners of the title box */
+  }
+  
+  
+  
+  .card h3 {
+    font-size: 16px;
+    color: #333;
+  }
+  /* src/components/CategoryCardView.css */
+.category-card-view .card {
+  cursor: pointer; /* Change cursor to pointer */
+  transition: transform 0.3s ease;
+}
+
+.category-card-view .card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.category-card-view .card-title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}

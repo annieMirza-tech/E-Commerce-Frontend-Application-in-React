@@ -1,0 +1,106 @@
+/* src/components/ProductCard.css */
+.product-card {
+ 
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  width: 200px;
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden; 
+  height: 200px;
+}
+
+.product-image img {
+  width: 100%;
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; /* Top of the image */
+  right: 0; /* Right of the image */
+  bottom: 0; /* Bottom of the image */
+  left: 0; /* Full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align the quick view button to the bottom */
+  align-items: flex-end; /* Align the top right icons */
+  gap: 10px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for showing/hiding */
+}
+
+.product-image:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.icons {
+  display: flex;
+  flex-direction: column; /* Align icons vertically */
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: translateY(-100%); /* Hide above the image initially */
+  transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+}
+
+.product-image:hover .icons {
+  transform: translateY(0); /* Slide down to be visible */
+}
+
+.overlay .cart-icon,
+.overlay .like-icon {
+  background: none; /* Remove background */
+  color: black; /* Black icon color */
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.2em; /* Adjust size as needed */
+  cursor: pointer; 
+}
+
+.quick-view-wrapper {
+  position: relative;
+  width: 100%; /* Ensure the quick-view button takes the full width */
+}
+
+.quick-view {
+  background-color: rgb(218, 39, 69); /* Pink background color */
+  color: #fff; /* White text color */
+  border: none;
+  width: 100%; /* Full width */
+  padding: 10px;
+  transform: translateY(100%); /* Hide below the image initially */
+  transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+  cursor: pointer; 
+}
+
+.product-image:hover .quick-view-wrapper .quick-view {
+  transform: translateY(0); /* Slide up to be visible */
+}
+
+.color-options {
+  text-align: center; /* Center the color options within the card */
+  margin: 10px 0; /* Margin around the color options */
+}
+
+.color-option .color {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+.rating {
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: bold;
+}

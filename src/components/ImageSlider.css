@@ -1,0 +1,75 @@
+/* ImageSlider.css */
+.slider-container {
+  width: 90vw; /* Adjust width to be responsive */
+  margin: 1px auto; /* Center horizontally with margin */
+  position: relative; /* Needed for positioning dots */
+  height: 30vh; /* Default height for the slider */
+}
+
+.slide {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+}
+
+.slide img {
+  max-width: 100%; /* Scale image within the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Dots positioning and styling */
+.slick-dots {
+  position: absolute;
+  top: 755px; /* Position dots at the top of the slider */
+  width: 100%; /* Full width of the slider */
+  text-align: center; /* Center dots horizontally */
+  z-index: 1000; /* Ensure dots are above images */
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px; /* Space between dots */
+}
+
+.slick-dots li button {
+  font-size: 0; /* Hide default button text */
+}
+
+.slick-dots li button::before {
+  font-family: 'slick';
+  font-size: 10px; /* Size of the dots */
+  line-height: 1;
+  color: #333; /* Inactive dot color */
+  opacity: 0.75;
+  text-shadow: 0 0 1px #333;
+  content: '•'; /* Dot character */
+}
+
+.slick-dots li.slick-active button::before {
+  color: #007bff; /* Active dot color */
+}
+
+/* Custom Arrows (if needed) */
+.slick-prev, .slick-next {
+  position: absolute;
+  bottom: 20px; /* Position arrows above the dots */
+  z-index: 1000; /* Ensure arrows are above images */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Make arrows circular */
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 15px; /* Position the left arrow */
+}
+
+.slick-next {
+  right: 15px; /* Position the right arrow */
+}

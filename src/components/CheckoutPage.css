@@ -1,0 +1,40 @@
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.cart-banner {
+  width: 90%;
+  background-color: rgb(218, 39, 69); /* Pink background color */
+  padding: 20px;
+  height: 20px;
+}
+
+.cart-message {
+  display: flex;
+  margin-top: -20px;
+  color: white; /* White text color */
+}
+
+.empty-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.return-shop-button {
+  margin-top: 20px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.return-shop-button:hover {
+  background-color: #333;
+}

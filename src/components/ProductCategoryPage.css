@@ -1,0 +1,12 @@
+/* src/components/ProductCategoryPage.css */
+.product-category-page {
+  display: flex;
+}
+
+.product-list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
